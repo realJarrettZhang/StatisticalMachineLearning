@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+    <title>Statistical Machine Learning</title>
+    <style>
+        :root
+        {
+            --primary-color: #2c3e50;
+            --hover-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #6c757d;
+        }
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header
+        {
+            text-align: center;
+            padding: 5rem 2rem 3rem;
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h1
+        {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+        }
+        .subtitle
+        {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        main
+        {
+            flex: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            width: 100%;
+        }
+
+        .section-title
+        {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+            margin-top: 2rem;
+        }
+        .section-title:first-child
+        {
+            margin-top: 0;
+        }
+        .nav-grid
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .nav-card
+        {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+            display: flex;
+            align-items: center;
+        }
+        .nav-card:hover
+        {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            border-color: var(--hover-color);
+            color: var(--hover-color);
+        }
+        .nav-card span
+        {
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        footer
+        {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Statistical Machine Learning</h1>
+        <p class="subtitle">Jarrett Zhang</p>
+    </header>
+
+    <main>
+        <h2 class="section-title">Foundations</h2>
+        <div class="nav-grid">
+            <a href="Introduction.html" class="nav-card">
+                <span>Introduction</span>
+            </a>
+            <a href="Model Evaluation and Selection.html" class="nav-card">
+                <span>Model Evaluation and Selection</span>
+            </a>
+        </div>
+
+        <h2 class="section-title">Supervised Learning</h2>
+        <div class="nav-grid">
+            <a href="Linear Model.html" class="nav-card">
+                <span>Linear Model</span>
+            </a>
+            <a href="Decision Tree.html" class="nav-card">
+                <span>Decision Tree</span>
+            </a>
+            <a href="Neural Network.html" class="nav-card">
+                <span>Neural Network</span>
+            </a>
+            <a href="Support Vector Machine.html" class="nav-card">
+                <span>Support Vector Machine</span>
+            </a>
+            <a href="Bayesian Classifier.html" class="nav-card">
+                <span>Bayesian Classifier</span>
+            </a>
+            <a href="Ensemble Learning.html" class="nav-card">
+                <span>Ensemble Learning</span>
+            </a>
+        </div>
+
+        <h2 class="section-title">Unsupervised & Advanced Topics</h2>
+        <div class="nav-grid">
+            <a href="Clustering.html" class="nav-card">
+                <span>Clustering</span>
+            </a>
+            <a href="Dimensionality Reduction and Metric Learning.html" class="nav-card">
+                <span>Dimensionality Reduction and Metric Learning</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Hosted on GitHub Pages &copy; 2026</p>
+    </footer>
+</body>
+</html>
